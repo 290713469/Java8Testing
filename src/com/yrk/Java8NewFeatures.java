@@ -58,6 +58,23 @@ public class Java8NewFeatures {
 //		Runnable r1 = () -> System.out.println("Hello world 1");
 //		process(r1);
 //		process(() -> System.out.println("Hello world 2"));
+		
+//		String test = "ttest";
+//		char[] t = test.toCharArray();
+//		StringBuilder sb = new StringBuilder();
+//		for (int i = 0; i < t.length; i++) {
+//			t[i] = (char) (t[i] - 32);
+//		}
+//		System.out.println(String.valueOf(t));
+		int n = 0b00000101;
+		System.out.println(Integer.toBinaryString(n));
+		int n1 = n >>>1;//00000010
+		System.out.println(Integer.toBinaryString(n1));
+		n |= n1;
+		System.out.println(Integer.toBinaryString(n));
+		// 00000101
+		// 00000010
+		// 00000111
 	}
 	
 	public static void process(Runnable r) {
