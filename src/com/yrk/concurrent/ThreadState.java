@@ -38,7 +38,6 @@ public class ThreadState {
 	}
 	
 	static class Blocked implements Runnable {
-
 		@Override
 		public void run() {
 			synchronized (Blocked.class) {
@@ -52,7 +51,5 @@ public class ThreadState {
 				}
 			}
 		}
-		
 	}
-
 }

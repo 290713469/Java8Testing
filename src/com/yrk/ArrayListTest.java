@@ -22,15 +22,16 @@ public class ArrayListTest {
 	 */
 	public static void main(String[] args) throws Exception {
 		List<String> list = new ArrayList<String>();
-		list.add("1");
-		list.add("2");
-		list.add("3");
-		
-		for (String val : list) {
-			if (val.equals("2")) {
-				list.remove(val);
-			}
-		}
+		System.out.println(list.size());
+//		list.add("1");
+//		list.add("2");
+//		list.add("3");
+//		
+//		for (String val : list) {
+//			if (val.equals("2")) {
+//				list.remove(val);
+//			}
+//		}
 		
 //		Map<String, String> map = new HashMap<String, String>(1);
 //		
