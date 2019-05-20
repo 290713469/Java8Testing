@@ -23,8 +23,11 @@ public class Java8NewFeatures {
 //		List<String> str = Arrays.asList("a", "c", "b");
 //		str.sort(String::compareToIgnoreCase);
 //		str.forEach((String a) -> System.out.println(a));
-//		List<Apple> inventory = Arrays.asList(new Apple(32, "color", "c"), new Apple(2, "yellow", "d"), new Apple(3, "red", "t"));
-//		inventory.sort(Comparator.comparing(Apple::getWeight).reversed());
+		List<Apple> inventory = Arrays.asList(new Apple(32, "color", "c"), new Apple(2, "yellow", "d"), new Apple(3, "red", "t"));
+		inventory.forEach(s -> {
+			System.out.println(s.getWeight());
+		});
+		//		inventory.sort(Comparator.comparing(Apple::getWeight).reversed());
 //		inventory.forEach((Apple a) -> System.out.println(a.getWeight()));
 		
 //		String inputFilePath = "E:\\WAS_apps\\mdms\\input\\input-test2.txt";
@@ -66,12 +69,12 @@ public class Java8NewFeatures {
 //			t[i] = (char) (t[i] - 32);
 //		}
 //		System.out.println(String.valueOf(t));
-		int n = 0b00000101;
-		System.out.println(Integer.toBinaryString(n));
-		int n1 = n >>>1;//00000010
-		System.out.println(Integer.toBinaryString(n1));
-		n |= n1;
-		System.out.println(Integer.toBinaryString(n));
+//		int n = 0b00000101;
+//		System.out.println(Integer.toBinaryString(n));
+//		int n1 = n >>>1;//00000010
+//		System.out.println(Integer.toBinaryString(n1));
+//		n |= n1;
+//		System.out.println(Integer.toBinaryString(n));
 		// 00000101
 		// 00000010
 		// 00000111
