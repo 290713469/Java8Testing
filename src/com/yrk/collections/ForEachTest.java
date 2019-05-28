@@ -59,17 +59,27 @@ public class ForEachTest {
 //		System.out.println(userNames);
 //	}
 	public static void main(String[] args) {
-		ConcurrentLinkedDeque<String> userNames = new ConcurrentLinkedDeque<String>();
-		userNames.add("Tom");
-		userNames.add("Jack");
-		userNames.add("Mic");
-		userNames.add("Seven");
-		for (String userName : userNames) {
-			if (userName.equals("Jack")) {
-				userNames.remove(userName);
-			}
+		int sshift = 0;
+		int concurrentLevel = 16;
+		int ssize = 1;
+		while (ssize < concurrentLevel) {
+			++sshift;
+			ssize <<=1;
 		}
-		System.out.println(userNames);
+		
+		System.out.println(sshift);
+		
+//		ConcurrentLinkedDeque<String> userNames = new ConcurrentLinkedDeque<String>();
+//		userNames.add("Tom");
+//		userNames.add("Jack");
+//		userNames.add("Mic");
+//		userNames.add("Seven");
+//		for (String userName : userNames) {
+//			if (userName.equals("Jack")) {
+//				userNames.remove(userName);
+//			}
+//		}
+//		System.out.println(userNames);
 	}
 	
 }

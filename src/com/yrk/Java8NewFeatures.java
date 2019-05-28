@@ -66,15 +66,18 @@ public class Java8NewFeatures {
 //			t[i] = (char) (t[i] - 32);
 //		}
 //		System.out.println(String.valueOf(t));
-		int n = 0b00000101;
-		System.out.println(Integer.toBinaryString(n));
-		int n1 = n >>>1;//00000010
-		System.out.println(Integer.toBinaryString(n1));
-		n |= n1;
-		System.out.println(Integer.toBinaryString(n));
+//		int n = 0b00000101;
+//		System.out.println(Integer.toBinaryString(n));
+//		int n1 = n >>>1;//00000010
+//		System.out.println(Integer.toBinaryString(n1));
+//		n |= n1;
+//		System.out.println(Integer.toBinaryString(n));
 		// 00000101
 		// 00000010
 		// 00000111
+		int initialCapacity = 11;
+		int result = initialCapacity + (initialCapacity >>> 1) + 1;
+		System.out.println(result);
 	}
 	
 	public static void process(Runnable r) {
